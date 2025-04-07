@@ -261,32 +261,94 @@
 		</p>
 
 		<p>
+			Varying <strong>density</strong> affects the mass of each point in the cloth, making the cloth fall faster and with more force when density is high, which increases the likelihood and intensity of collisions and folding.
+			Lower density results in a lighter, floatier cloth that falls more gently and reacts more slowly.
+			The first two rows of images show the self-collision of cloths with lower density while the third and fourth rows show the self-collision of cloths with higher density.
+			
+			The <strong>ks</strong> parameter, which controls the spring stiffness, determines how strongly the cloth resists deformation—higher ks results in a stiffer cloth that better maintains its shape and resists stretching or folding, while lower ks creates a softer, more flexible cloth that bends and collapses more easily. 
+			Together, these parameters shape how realistic and dynamic the cloth appears during self-collision.
+		</p>
+
+		<p>
 			Below, I show 4 screenshots documenting how the cloth falls and folds on itself. The camera angle was adjusted to allow for closer viewing.
 		</p>
 
 		<div style="display: flex; flex-direction: column; align-items: center;">
 			<table style="width: 100%; text-align: center; border-collapse: collapse;">
-			  <tr>
-				<td style="text-align: center;">
-				  <img src="images/fig4-1.png" width="400px"/>
-				  <figcaption>ks = Screenshot 1</figcaption>
-				</td>
-				<td style="text-align: center;">
-				  <img src="images/fig4-2.png" width="400px"/>
-				  <figcaption>ks = Screenshot 2</figcaption>
-				</td>
-			  </tr>
-			  <tr>
-				<td style="text-align: center;">
-				  <img src="images/fig4-3.png" width="400px"/>
-				  <figcaption>ks = Screenshot 3</figcaption>
-				</td>
-				<td style="text-align: center;">
-				  <img src="images/fig4-4.png" width="400px"/>
-				  <figcaption>ks = Screenshot 4</figcaption>
-				</td>
-			  </tr>
+				<tr>
+					<td colspan="4"> density = 5, ks = 2000 </td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">
+					<img src="images/d5k2000-1.png" width="400px"/>
+					</td>
+					<td style="text-align: center;">
+					<img src="images/d5k2000-2.png" width="400px"/>
+					</td>
+					<td style="text-align: center;">
+					<img src="images/d5k2000-3.png" width="400px"/>
+					</td>
+					<td style="text-align: center;">
+					<img src="images/d5k2000-4.png" width="400px"/>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="4"> density = 5, ks = 6000 </td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">
+					<img src="images/d5k6000-1.png" width="400px"/>
+					</td>
+					<td style="text-align: center;">
+					<img src="images/d5k6000-2.png" width="400px"/>
+					</td>
+					<td style="text-align: center;">
+					<img src="images/d5k6000-3.png" width="400px"/>
+					</td>
+					<td style="text-align: center;">
+					<img src="images/d5k6000-4.png" width="400px"/>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="4"> density = 20, ks = 2000 </td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">
+					<img src="images/d20k4000-1.png" width="400px"/>
+					</td>
+					<td style="text-align: center;">
+					<img src="images/d20k4000-2.png" width="400px"/>
+					</td>
+					<td style="text-align: center;">
+					<img src="images/d20k4000-3.png" width="400px"/>
+					</td>
+					<td style="text-align: center;">
+					<img src="images/d20k4000-4.png" width="400px"/>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="4"> density = 20, ks = 6000 </td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">
+					<img src="images/d20k6000-1.png" width="400px"/>
+					</td>
+					<td style="text-align: center;">
+					<img src="images/d20k6000-2.png" width="400px"/>
+					</td>
+					<td style="text-align: center;">
+					<img src="images/d20k6000-3.png" width="400px"/>
+					</td>
+					<td style="text-align: center;">
+					<img src="images/d20k6000-4.png" width="400px"/>
+					</td>
+				</tr>
+			  
 			</table>
+
 		</div>
 
 
